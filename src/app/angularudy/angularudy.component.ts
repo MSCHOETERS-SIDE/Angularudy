@@ -9,6 +9,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 export class AngularudyComponent implements OnInit {
 
   public text = "";
+  public text2 = "";
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
@@ -18,11 +19,17 @@ export class AngularudyComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 5000);
+    }, 1000);
   }
 
   click(){
     this.text += "Yeah Mich!";
   }
+
+  click2() {
+this.text2 += "nonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn "
+  }
+
+
 
 }
