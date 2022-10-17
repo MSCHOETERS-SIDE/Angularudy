@@ -8,6 +8,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class AngularudyComponent implements OnInit {
 
+  public text = "";
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
@@ -18,6 +19,10 @@ export class AngularudyComponent implements OnInit {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
     }, 5000);
+  }
+
+  click(){
+    this.text += "Yeah Mich!";
   }
 
 }
