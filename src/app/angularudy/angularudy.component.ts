@@ -8,6 +8,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class AngularudyComponent implements OnInit {
 
+  public rudyisWinning = false;
   private numb = 0;
   public text = "";
   constructor(private spinner: NgxSpinnerService) { }
@@ -24,11 +25,15 @@ export class AngularudyComponent implements OnInit {
 
   click(){
     this.numb++;
-    this.text += "Yeah Mich!";
+    this.text += " Yeah Mich! ";
 
-    if(this.numb === 5)
-    {this.text = "Rudy win the game !"
-  this.numb = 0;}
+    if(this.numb === 5){
+      this.text = "";
+      this.numb = 0;
+      this.rudyisWinning = !this.rudyisWinning;
+    }
+
+    if(this.rudyisWinning)  this.text = " Rudy win the game ! (" + this.numb + "/5)" 
   }
 
 }
