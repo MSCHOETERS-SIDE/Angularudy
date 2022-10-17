@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularudyComponent implements OnInit {
 
+  private numb = 0;
   public text = "";
 
   constructor() { }
@@ -15,7 +16,12 @@ export class AngularudyComponent implements OnInit {
   }
 
   click(){
+    this.numb++;
     this.text += "Yeah Mich!";
+
+    if(this.numb === 5)
+    {this.text = "Rudy win the game !"
+  this.numb = 0;}
   }
 
 }
