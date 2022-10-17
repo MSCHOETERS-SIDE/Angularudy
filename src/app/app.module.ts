@@ -7,6 +7,7 @@ import { SuperCompoComponent } from './super-compo/super-compo.component';
 import { SuperCompo2Component } from './super-compo2/super-compo2.component';
 import { SuperCompo3Component } from './super-compo3/super-compo3.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgxSpinnerModule
   ],
   providers: [],
