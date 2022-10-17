@@ -6,6 +6,7 @@ import { AngularudyComponent } from './angularudy/angularudy.component';
 import { SuperCompoComponent } from './super-compo/super-compo.component';
 import { SuperCompo2Component } from './super-compo2/super-compo2.component';
 import { SuperCompo3Component } from './super-compo3/super-compo3.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SuperCompo3Component } from './super-compo3/super-compo3.component';
     SuperCompo3Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
