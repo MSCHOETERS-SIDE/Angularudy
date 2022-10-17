@@ -11,6 +11,7 @@ export class AngularudyComponent implements OnInit {
   public rudyisWinning = false;
   private numb = 0;
   public text = "";
+  public text2 = "";
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
@@ -20,7 +21,7 @@ export class AngularudyComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 5000);
+    }, 2000);
   }
 
   click(){
@@ -35,5 +36,11 @@ export class AngularudyComponent implements OnInit {
 
     if(this.rudyisWinning)  this.text = " Rudy win the game ! (" + this.numb + "/5)" 
   }
+
+  click2() {
+this.text2 += "nonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn "
+  }
+
+
 
 }
