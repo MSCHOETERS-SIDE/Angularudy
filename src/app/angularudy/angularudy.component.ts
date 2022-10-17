@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularudyComponent implements OnInit {
 
+  public text = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  click(){
+    this.text += "Yeah Mich!";
   }
 
 }
